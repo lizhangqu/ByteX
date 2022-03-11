@@ -10,7 +10,7 @@ if (proFile != null) {
     } catch (e) {
     }
 }
-if (!excludeApp) {
+if (!excludeApp.toBoolean()) {
 //    "./publish.sh".execute().waitForProcessOutput(System.out, System.err)
     include ':example'
 }
